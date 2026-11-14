@@ -1,0 +1,28 @@
+name: Reproduce analysis
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install -r requirements.txt
+      - name: Run analysis
+        run: python src/lookalike.py
+      - name: Commit regenerated outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add results figures
+          git diff --staged --quiet || git commit -m "Regenerate results and figures [skip ci]"
+          git push
