@@ -1,0 +1,5 @@
+model,holdout_recall,lift,true_similar_share
+Gradient boosting,0.182,3.65,0.573
+Logistic regression,0.152,3.05,0.622
+Cosine to seed centroid,0.125,2.5,0.552
+Nearest-seed cosine (kNN),0.078,1.55,0.299

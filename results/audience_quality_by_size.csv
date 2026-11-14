@@ -1,0 +1,25 @@
+model,audience_pct,audience_size,holdout_recall,lift,mean_cosine_to_seed,true_similar_share
+Cosine to seed centroid,1,604,0.038,3.75,0.526,0.679
+Cosine to seed centroid,2,1208,0.055,2.75,0.49,0.644
+Cosine to seed centroid,5,3020,0.125,2.5,0.434,0.552
+Cosine to seed centroid,10,6040,0.235,2.35,0.383,0.466
+Cosine to seed centroid,20,12080,0.368,1.84,0.322,0.386
+Cosine to seed centroid,30,18120,0.502,1.67,0.279,0.332
+Logistic regression,1,604,0.035,3.5,0.433,0.775
+Logistic regression,2,1208,0.072,3.62,0.406,0.719
+Logistic regression,5,3020,0.152,3.05,0.367,0.622
+Logistic regression,10,6040,0.272,2.72,0.326,0.525
+Logistic regression,20,12080,0.408,2.04,0.276,0.427
+Logistic regression,30,18120,0.54,1.8,0.242,0.364
+Gradient boosting,1,604,0.052,5.25,0.362,0.742
+Gradient boosting,2,1208,0.1,5.0,0.332,0.671
+Gradient boosting,5,3020,0.182,3.65,0.299,0.573
+Gradient boosting,10,6040,0.268,2.68,0.267,0.485
+Gradient boosting,20,12080,0.428,2.14,0.223,0.391
+Gradient boosting,30,18120,0.548,1.82,0.195,0.335
+Nearest-seed cosine (kNN),1,604,0.02,2.0,0.21,0.331
+Nearest-seed cosine (kNN),2,1208,0.028,1.38,0.194,0.324
+Nearest-seed cosine (kNN),5,3020,0.078,1.55,0.184,0.299
+Nearest-seed cosine (kNN),10,6040,0.155,1.55,0.174,0.289
+Nearest-seed cosine (kNN),20,12080,0.275,1.38,0.161,0.274
+Nearest-seed cosine (kNN),30,18120,0.408,1.36,0.151,0.261
